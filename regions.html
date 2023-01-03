@@ -1,0 +1,271 @@
+<html>
+    <head>
+        <title>Regions</title>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    header{
+        width:100%;
+        height:50px;
+        background:#F8F8F8;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .Logo{
+        color:rgb(44,44,44);
+        font-size: 1.5em;
+    }
+    .nav{
+        display:flex;
+        align-items: center;
+
+    }
+    .nav ol{
+        display:flex;
+        list-style: none;
+    }
+    .nav ol li{
+        margin: lem;
+    }
+.nav ol li a{
+    text-decoration: none;
+    padding:0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39,39,39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li a::before{
+content: '';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:41px;
+border-radius:10px 10px 0 0;
+background: #853333;
+transform-origin:bottom;
+background:linear-gradient(to right,#2c5364,#203a43, #0F2027);
+transform:scaleY(0.05);
+z-index: -1;
+transition: all .4s;
+
+}
+.nav ol li a:hover::before{
+    transform: scaleY(1.1);
+}
+.nav ol li a:hover{
+    color:white;
+}
+.btn{
+    position: relative;
+    width:25px;
+    height:25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor:pointer;
+    display:none;
+}
+.btn::before{
+    content: '\f0c9';
+    position: absolute;
+    top:0;
+    left:0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+}
+@media
+    (max-width:1200px){
+        .btn{
+            display: flex;
+            z-index:100;
+        }
+        header{
+            justify-content:space-between;
+            padiing: 0 2em;
+        }
+        .nav{
+            width:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content: center;
+            background:#F8F8F8;
+            transform: translateY(-110%);
+            transition: all .4s;
+        }
+        input:checked~.nav{
+            transform:translateY(0%);
+
+        }
+        input:checked::before{
+            content:'\f00d';
+        }
+}
+@media(max-width:700px){
+    .nav ol{
+        flex-direction: column;
+        text-align:center;
+    }
+}   
+body{
+    background-color: rgb(248, 119, 141);
+}
+
+#a1{
+    border:solid navy;
+    border-width: 7px 7px 7px 7px;
+}
+#b1{
+    color:white;
+    font-size: 200px;
+    text-shadow: 5px 7px navy;
+}
+#c1{
+    width:140px;
+    height:50px;
+    background-color: rgb(197, 55, 145);
+    border:solid white;
+    border-radius: 40px;
+    text-align: center;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 2px 3px black;
+}
+#c11{
+    color:navy;
+    text-shadow: 1px 0px white;
+}
+#d1{
+    width:250px;
+    height:50px;
+    background-color: rgb(197, 55, 145);
+    border:solid white;
+    border-radius: 40px;
+    text-align: center;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 2px 3px black;
+}
+#e1{
+    width:200px;
+    height:50px;
+    background-color: rgb(197, 55, 145);
+    border:solid white;
+    border-radius: 40px;
+    text-align: center;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 2px 3px black;
+}
+#f1{
+    width:220px;
+    height:50px;
+    background-color: rgb(197, 55, 145);
+    border:solid white;
+    border-radius: 40px;
+    text-align: center;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 2px 3px black;
+}
+#g1{
+    width:140px;
+    height:50px;
+    background-color: rgb(197, 55, 145);
+    border:solid white;
+    border-radius: 40px;
+    text-align: center;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 2px 3px black;
+}
+#cap{
+    background-color: seagreen;
+    border:solid white;
+    color:black;
+    border-radius: 40px;
+    text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="Logo">Navbar</p>
+            <input type="checkbox" name=" " class="btn" />
+            <div class="nav">
+                <ol>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="regions.html">Regions</a></li>
+                    <li><a href="travel.html">Travel Information</a></li>
+                    <li><a href="language.html">Language</a></li>
+                    <li><a href="visa.html">Visas and Currencies</a></li>
+                    <li><a href="login.html">Login Form</a></li>
+                </ol>
+            </div>
+        </header>
+        <br>
+<table>
+    <tr>
+        <th>
+            <div id="a1">
+            <marquee behaviour="scroll" direction="left"><img src="build.jpg" height="710px" width="670px"></marquee>
+            </div>
+        </th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>
+        <br>
+<h1 id="b1"><marquee behaviour="scroll" direction="down"><i>Regions....</i></marquee></h1>
+        </th>
+    </tr>
+</table>
+<br>
+<br>
+<marquee behaviour="scroll" direction="right"><h1 id="c1"><i>NORTH</i></h1></marquee>
+<br>
+<br>
+<br>
+<h2 id="c11"><u><mark>The North of Brazil has countless amazing locations. The region comprises 7 states: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, and Tocantins. It is the largest region of Brazil, in which you will find the largest tropical rainforest in the world, the Amazon, as well as the Amazon River Basin, the largest drainage basin on the planet. Fall in love with incredible destinations such as Jalapão, Mount Roraima National Park, and the freshwater beaches of Alter do Chão.</mark></u></h2>
+<br>
+<br>
+<marquee behaviour="scroll" direction="left"><h1 id="d1"><i>NORTH EAST</i></h1></marquee>
+<br>
+<br>
+<br>
+<h2 id="c11"><u><mark>The Northeast of Brazil is home to numerous idyllic locations. The region comprises 9 states: Maranhão, Piauí, Ceará, Rio Grande do Norte, Paraíba, Pernambuco, Alagoas, Sergipe, and Bahia. The region boasts the longest coastline in the country, and has breathtaking landscapes and incredible natural beauty. This includes the beaches of Fernando de Noronha, the sand dunes of Lençóis Maranhenses, the mountains of Chapada Diamantina, and the islands and mangroves of the Parnaíba River Delta.</mark></u></h2>
+<br>
+<br>
+<br>
+<marquee behaviour="scroll" direction="right"><h1 id="e1"><i>MID WEST</i></h1></marquee>
+<br>
+<br>
+<br>
+<h2 id="c11"><u><mark>The Brazilian Midwest Region will impress anyone who visits it. Comprising 3 states, Mato Grosso, Mato Grosso do Sul, and Goiás, the region also includes the Federal District, where the capital of Brazil, Brasília, is located. With breathtaking landscapes in destinations such as Bonito, with its crystal-clear rivers, Chapada dos Guimarães National Park, Chapada dos Veadeiros National Park, and Pantanal National Park, this last one on the UNESCO World Natural Heritage List, the Midwest is undoubtedly an incredible region.</mark></u></h2>
+<br>
+<br>
+<marquee behaviour="scroll" direction="left"><h1 id="f1"><i>SOUTH EAST</i></h1></marquee>
+<br>
+<br>
+<br>
+<h2 id="c11"><u><mark>The Southeast of Brazil has truly astonishing landscapes. The region comprises 4 states: Rio de Janeiro, São Paulo, Minas Gerais, and Espírito Santo. Rio de Janeiro is famous for its tourist attractions, such as Corcovado Mountain, Christ the Redeemer, Sugarloaf Mountain, and the beaches of Copacabana and Ipanema. But there is more. You can experience other incredible destinations, such as São Paulo, with its cosmopolitan diversity, the historic city of Ouro Preto, the charming Vitória, capital city of Espírito Santo,  and many others.</mark></u></h2>
+<br>
+<br>
+<marquee behaviour="scroll" direction="right"><h1 id="g1"><i>SOUTH</i></h1></marquee>
+<br>
+<br>
+<br>
+<h2 id="c11"><u><mark>Those who visit the South Region of Brazil will find it unforgettable. Comprising 3 states, Paraná, Santa Catarina, and Rio Grande do Sul, the region has delightful destinations. Visitors will be able to experience places such as the amazing Iguaçu National Park, on the UNESCO World Natural Heritage List, as well as charming mountain destinations such as the highlands in Rio Grande do Sul and Santa Catarina.</mark></u></h2>
+<br>
+<br>
+<h2 id="cap"><i>THANKYOU FOR YOUR CONCERN...</i></h2>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+<html>
+<head>
+<title>VISIT BRAZIL</title>
+<style>
+body{
+    background-color:rgb(11, 78, 78);
+
+    }
+    #b{
+        background-image: url("mount.jpg");
+        background-size: 1700px 650px;
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        background-repeat: no-repeat;
+        border:solid white;
+        color:black;
+        text-shadow:1px 2px pink;
+        box-shadow:3px 4px olive;
+        border-width: 15px 15px 15px 15px;
+
+    }
+    @import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    header{
+        width:100%;
+        height:50px;
+        background:#F8F8F8;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .Logo{
+        color:rgb(44,44,44);
+        font-size: 1.5em;
+    }
+    .nav{
+        display:flex;
+        align-items: center;
+
+    }
+    .nav ol{
+        display:flex;
+        list-style: none;
+    }
+    .nav ol li{
+        margin: lem;
+    }
+.nav ol li a{
+    text-decoration: none;
+    padding:0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39,39,39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li a::before{
+content: '';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:41px;
+border-radius:10px 10px 0 0;
+background: #853333;
+transform-origin:bottom;
+background:linear-gradient(to right,#2c5364,#203a43, #0F2027);
+transform:scaleY(0.05);
+z-index: -1;
+transition: all .4s;
+
+}
+.nav ol li a:hover::before{
+    transform: scaleY(1.1);
+}
+.nav ol li a:hover{
+    color:white;
+}
+.btn{
+    position: relative;
+    width:25px;
+    height:25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor:pointer;
+    display:none;
+}
+.btn::before{
+    content: '\f0c9';
+    position: absolute;
+    top:0;
+    left:0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+}
+@media
+    (max-width:1200px){
+        .btn{
+            display: flex;
+            z-index:100;
+        }
+        header{
+            justify-content:space-between;
+            padiing: 0 2em;
+        }
+        .nav{
+            width:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content: center;
+            background:#F8F8F8;
+            transform: translateY(-110%);
+            transition: all .4s;
+        }
+        input:checked~.nav{
+            transform:translateY(0%);
+
+        }
+        input:checked::before{
+            content:'\f00d';
+        }
+}
+@media(max-width:700px){
+    .nav ol{
+        flex-direction: column;
+        text-align:center;
+    }
+}
+#c{
+    border:solid mediumvioletred;
+     text-align: center;
+     background-color: rgb(100, 31, 54);
+     box-shadow: 4px 5px violet;
+     height:70px;
+     color:white;
+     border-radius: 40px;
+     text-shadow: 1px 2px  hotpink;
+}
+#d{
+    text-align:center;
+    color:darkturquoise;
+    text-shadow:2px 3px navy;
+    font-size: 30px; 
+
+}
+.m1{
+    background-color:yellow;
+    color:blue;
+    border-radius: 50px;
+    border: solid blue;
+    height:30px;
+    width:100px;
+}
+#g{
+    color:white;
+    text-shadow: 1px 2px black;
+}
+#f{
+    background-image: url("out.jpg");
+    width:730px;
+    height:400px;
+    text-align:center;
+    border:solid white;
+    border-radius: 35px;
+}
+#g1{
+    color:white;
+    text-shadow: 1px 2px black;
+}
+#f1{
+    background-image: url("cul.jpg");
+    width:730px;
+    height:400px;
+    text-align:center;
+    border:solid white;
+    border-radius: 35px;
+}
+#g2{
+    color:white;
+    text-shadow: 1px 2px black;
+}
+#f2{
+    background-image: url("sun1.jpg");
+    width:730px;
+    height:400px;
+    text-align:center;
+    border:solid white;
+    border-radius: 35px;
+    
+}
+#g3{
+    color:white;
+    text-shadow: 1px 2px black;
+
+}
+#f3{
+    background-image: url("gas2.jpg");
+    width:730px;
+    height:400px;
+    text-align:center;
+    border:solid white;
+    border-radius: 35px;
+}  
+#e{
+    background-image: url("strip.gif");
+    border:solid cyan;
+
+}
+#head{
+    color:white;
+    text-align:center;
+    text-shadow:1px 2px maroon;
+    font-size:60px;
+}
+
+.container img:hover{
+    transform:rotate(15deg) scale(1.1);
+    border-radius: 50px;
+    opacity: 1;
+    border:solid darkorange;
+    box-shadow: 3px 5px maroon;
+}
+#para{
+    text-align: center;
+    color:darkorange;
+    text-shadow: 1px 2px maroon;
+    font-size: 40px;
+}
+#lin{
+    color:white;
+}
+
+
+
+
+.container1{
+    width:1170px;
+    padding:25px 15px;
+    margin: 0 auto;
+    color:crimson;
+}
+.BOTTOM-wrapper{
+    padding:180px 0 100px 0; 
+    background-image: url(bg.jpg);
+    background-size: cover;
+    color:rgb(17, 16, 16);
+    text-align: center;
+}
+.BOTTOM-wrapper h1{
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.BOTTOM-wrapper p{
+    opacity: 0.7;
+    margin-bottom: 3px;
+
+}
+
+ .btn-wrapper p{
+margin: 10px 0;
+ }
+    
+
+    .btn-wrapper{
+    margin: 20px 0;}
+
+.signup{
+    background-color: #239b76;
+}
+.facebook{
+background-color: #3b5998;
+margin-right: 10px;
+}
+.btn{
+   
+    color:white;
+    display: inline-block;
+    opacity:0.8;
+    border-radius:4px;
+    padding: 12px 24px;
+}
+.btn:hover{
+    opacity: 1;
+}display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:230px;
+.fa{
+    margin-right: 5px;
+}
+.BOTTOM-wrapper{
+    background-size:cover;
+background-image: url("rain.gif");
+border:solid white;
+}
+#logo{
+    text-align: center;
+}
+.center{
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+    width:230px;
+}
+#last{
+    text-align: center;
+    border:solid rgb(226, 71, 97);
+    border-width: 20px 20px 20px 20px; 
+}
+.center2{
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+    width:400px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <p class="Logo">Navbar</p>
+        <input type="checkbox" name=" " class="btn" />
+        <div class="nav">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="travel.html">Travel Information</a></li>
+                <li><a href="language.html">Language</a></li>
+                <li><a href="visa.html">Visas and Currencies</a></li>
+                <li><a href="login.html">Login Form</a></li>
+            </ol>
+        </div>
+    </header>
+    <br>
+    <div id="log">
+    <marquee behaviour="scroll" direction="up"><img src= "parkle (2).png" height="190px" width="190px" alt="parkle (2)" class="center"></marquee>
+    </div>
+    <br>
+<h1 id="b"><i> "Dear Guests, look around you!"<br>"An amiable welcome for visit brazil full of friendship is yours..."</i></h1>
+<br>
+<br>
+<h1 id="c"><marquee behaviour="scroll" direction="right"><i><b>LIVE UNFORGETTABLE EXPERIENCES....</marquee></b></i></h1>
+<br>
+<br>
+<h2 id="d">With its unique cuisine, rich culture, some of the most beautiful beaches in the world, breathtaking waterfalls, and adventure for everyone’s liking, all you have to do is choose the perfect type of tourism for you and be amazed by the wonders of Brazil.</h2>
+<br>
+<br>
+<br>
+<div id="e">
+<table cellspacing="20px">
+    <tr>
+        <th>
+    <div id="f">
+        <h1 id="g"><i>Nature and Outdoor Activities.</i></h1>
+        
+        <br>
+        <a href="read1.html">
+            <button class="m1">
+                <b>READ MORE</b>
+            </button>
+        </a>
+        </div>
+        </th>
+        <th>
+    <div id="f1">
+        <h1 id="g1"><i>Culture.</i></h1>
+        
+        <br>
+        <a href="read3.html">
+            <button class="m1">
+                <b>READ MORE</b>
+            </button>
+        </a>
+        </div>
+        </th>
+        </tr>
+        
+
+        <tr>
+            <th>
+        <div id="f2">
+            <h1 id="g2"><i>Sun and Beach.</i></h1>
+            
+            <br>
+            <a href="read2.html">
+                <button class="m1">
+                    <b>READ MORE</b>
+                </button>
+            </a>
+            </div>
+            </th>
+            <th>
+        <div id="f3">
+            <h1 id="g3"><i>Gastronomy.</i></h1>
+            
+            <br>
+            <a href="read4.html
+            ">
+                <button class="m1">
+                    <b>READ MORE</b>
+                </button>
+            </a>
+            </div>
+            </th>
+            </tr>
+            </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<marquee behaviour="scroll" direction="down"><h1 id="head"><em>Amazing_ <mark>Places</mark> _to Visit...</em></h1></marquee>
+<br>
+<br>
+<br>
+<h2 id="para"><i><u>Brazil has incredible places for you all around the country. Our fantastic destinations are ready for your visit.</u></i></h2>
+<br>
+<br>
+<div id="lin">
+<u>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</u>
+</div>
+<br>
+<br>
+<div class="container">
+    <img src="vis.jpg" alt="" width="755px" height="450px" />
+    <img src="nova.jpg" alt=""  width="755px" height="450px"/>
+    <img src="maca.jpg" alt=""  width="755px" height="450px"/>
+    <img src="ilha.jpg" alt=""  width="755px" height="450px"/>
+    <img src="gra.jpg" alt=""  width="755px" height="450px"/>
+    <img src="cru.jpg" alt=""  width="755px" height="450px"/>
+</div>
+<br>
+<div id="lin">
+    <u>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</u>
+    </div>
+<br>
+<div class="BOTTOM-wrapper">
+    <div class="container1">
+        <h1><i><u>Get free personalized advice from our expert advisors, 24/7</u></i></h1>
+        <br>
+        <h2><i>Looking for advice?
+            <br>
+            A specially commissioned tour?</i></h2>
+
+
+    <div class="btn-wrapper">
+<br>
+<a href= "mailto:ayushgoel317@gmail.com" class="btn-signup"> Sign Up with Email</a>
+<br>
+<br>
+<h1><mark>Talk To Us Directly</mark></h1>
+<br>
+<br>
+<a href="https://www.facebook.com/ayush.goel.351104/" class="btn-facebook"><span class="fa fa-facebook"></span>Sign Up with facebook  </a>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="last">
+    <marquee behaviour="scroll" direction="down"><img src="thnk.gif" alt="thnk" height="300px" width="300px" class="center2"></marquee>
+</div>
+
+</body>
+</html>

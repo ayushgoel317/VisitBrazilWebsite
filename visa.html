@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>Visas and Currencies</title>
+        <style>
+               @import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    header{
+        width:100%;
+        height:50px;
+        background:#F8F8F8;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .Logo{
+        color:rgb(44,44,44);
+        font-size: 1.5em;
+    }
+    .nav{
+        display:flex;
+        align-items: center;
+
+    }
+    .nav ol{
+        display:flex;
+        list-style: none;
+    }
+    .nav ol li{
+        margin: lem;
+    }
+.nav ol li a{
+    text-decoration: none;
+    padding:0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39,39,39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li a::before{
+content: '';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:41px;
+border-radius:10px 10px 0 0;
+background: #853333;
+transform-origin:bottom;
+background:linear-gradient(to right,#2c5364,#203a43, #0F2027);
+transform:scaleY(0.05);
+z-index: -1;
+transition: all .4s;
+
+}
+.nav ol li a:hover::before{
+    transform: scaleY(1.1);
+}
+.nav ol li a:hover{
+    color:white;
+}
+.btn{
+    position: relative;
+    width:25px;
+    height:25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor:pointer;
+    display:none;
+}
+.btn::before{
+    content: '\f0c9';
+    position: absolute;
+    top:0;
+    left:0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+}
+@media
+    (max-width:1200px){
+        .btn{
+            display: flex;
+            z-index:100;
+        }
+        header{
+            justify-content:space-between;
+            padiing: 0 2em;
+        }
+        .nav{
+            width:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content: center;
+            background:#F8F8F8;
+            transform: translateY(-110%);
+            transition: all .4s;
+        }
+        input:checked~.nav{
+            transform:translateY(0%);
+
+        }
+        input:checked::before{
+            content:'\f00d';
+        }
+}
+@media(max-width:700px){
+    .nav ol{
+        flex-direction: column;
+        text-align:center;
+    }
+} 
+        body{
+            background-color: rgb(146, 228, 64);
+        }
+        #a{
+            background-color:mediumblue;
+            text-align:center;
+            border:solid orangered;
+            border-width: 6px;
+            border-radius: 50px;
+            color:white;
+            font-size: 50px;
+            text-shadow: 2px 2px deeppink;
+            box-shadow: 3px 5px white;
+        }
+        #upper{
+            color:black;
+            text-shadow: 1px 1px yellow;
+        }
+        #a1{
+            background-color:mediumblue;
+            text-align:center;
+            border:solid orangered;
+            border-width: 4px;
+            border-radius: 50px;
+            color:white;
+            text-shadow: 1px 1px deeppink;
+            box-shadow: 2px 3px white;
+        }
+        #vis{
+            border:solid lightseagreen;
+            border-radius: 40px;
+            border-width: 7px;
+            box-shadow: 2px 3px white;
+        }
+        #curr{
+            border:solid white;
+            border-width: 4px;
+            border-radius: 35px;
+            box-shadow: 2px 3px white;
+        }
+        #reg{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="Logo">Navbar</p>
+            <input type="checkbox" name=" " class="btn" />
+            <div class="nav">
+                <ol>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="regions.html">Regions</a></li>
+                    <li><a href="travel.html">Travel Information</a></li>
+                    <li><a href="language.html">Language</a></li>
+                    <li><a href="visa.html">Visas and Currencies</a></li>
+                    <li><a href="login.html">Login Form</a></li>
+                </ol>
+            </div>
+        </header>
+        <br>
+        <br>
+    <h1 id="a"><i><u><marquee>VISAS AND TRAVEL PAPERS</marquee></u></i></h1>
+    <br>
+    <br>
+    <h2 id="upper"><u><i>Visas are required for foreigners to enter and stay in the Brazilian territory for any period of time. They are granted by the Brazilian Consular Offices abroad.
+
+        Citizens of Mercosur member states do not need a visa to enter and stay in Brazil, the need only a valid passport or national identity document. Citizens of Australia, Canada, the United States of America, Japan, and the European Union are also exempt from visas to enter the Brazilian territory, and only need a valid passport. Visitor visas may be granted for different purposes, such as tourism, business, transit, and artistic or sports activities. Visitors on this type of visa are allowed to stay for a maximum of ninety days.</i></u></h2>
+    <br>
+    <br>
+    <h1 id="a1"><i>DO YOU NEED VISA ?</i></h2>
+    <br>
+    <br>
+    <table>
+    <tr>
+     <th>   
+     <img id="vis" src="pass.gif" width="600px" height="400px"> 
+    </th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>
+        <h2 id="upper"><u><i>Brazil's visa policy is based on the principle of reciprocity. This basically means that most countries that require visas from Brazilian citizens to enter their territories will also need a visa to travel to Brazil. Under current Brazilian immigration law (Law 13,445 of 2017), visa exemption may only be granted by the Brazilian authorities on a reciprocal basis, and through mutual understanding on the matter, except for the circumstances described in Decree 9,731 of 2019. Brazil currently has bilateral agreements on visa waivers with approximately 90 countries.</i></u></h2>
+    </th>
+    </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <marquee behaviour="scroll" direction="up"><h1 id="a"><i>CURRENCIES AND EXCHANGE RATES</i></h1></marquee>
+    <br>
+    <br>
+    <br>
+    <h2 id="upper"><i><u>The currency in Brazil is the REAL (R$). It can be exchanged at banks, exchange brokers, travel agencies, and authorized hotels. The official exchange rate is published daily in newspapers and specialized websites.</u></i></h2>
+    <br>
+    <h2 id="upper"><i><u>Both travellers checks and cash are easily exchanged at exchange counters. International credit cards are accepted in most hotels, restaurants, shops, travel agencies, car rental companies, and other companies that provide services to tourists.</u></i></h2>
+    <br>
+    <h2 id="upper"><u><i>As for the REAL, bills and coins have distinctive features and security elements that facilitate their identification. Brazilian banknotes are printed in denominations of 2 reals, 5 reals, 10 reals, 20 reals, 50 reals, 100 reals, and 200 reals. Brazilian coins are minted in denominations of 5 centavos, 10 centavos, 25 centavos, 50 centavos, and 1 Brazilian real.</i></u></h2>
+    <br>
+    <br>
+    <img id="curr" src="cur.jpg" height="500px" width="755px">
+     <img id="curr" src="cur 1.jpg" height="500px" width="755px">
+    <br>
+    <br>
+    <div id="reg">
+    <img src="regard.gif" height="400px" width="420px">
+    </div>
+</body>
+</html>

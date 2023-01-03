@@ -1,0 +1,200 @@
+
+<!-- saved from url=(0053)file:///C:/Users/HP/Desktop/mini%20project/read2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>read more 2</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    header{
+        width:100%;
+        height:50px;
+        background:#F8F8F8;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .Logo{
+        color:rgb(44,44,44);
+        font-size: 1.5em;
+    }
+    .nav{
+        display:flex;
+        align-items: center;
+
+    }
+    .nav ol{
+        display:flex;
+        list-style: none;
+    }
+    .nav ol li{
+        margin: lem;
+    }
+.nav ol li a{
+    text-decoration: none;
+    padding:0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39,39,39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li a::before{
+content: '';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:41px;
+border-radius:10px 10px 0 0;
+background: #853333;
+transform-origin:bottom;
+background:linear-gradient(to right,#2c5364,#203a43, #0F2027);
+transform:scaleY(0.05);
+z-index: -1;
+transition: all .4s;
+
+}
+.nav ol li a:hover::before{
+    transform: scaleY(1.1);
+}
+.nav ol li a:hover{
+    color:white;
+}
+.btn{
+    position: relative;
+    width:25px;
+    height:25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor:pointer;
+    display:none;
+}
+.btn::before{
+    content: '\f0c9';
+    position: absolute;
+    top:0;
+    left:0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+}
+@media
+    (max-width:1200px){
+        .btn{
+            display: flex;
+            z-index:100;
+        }
+        header{
+            justify-content:space-between;
+            padiing: 0 2em;
+        }
+        .nav{
+            width:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content: center;
+            background:#F8F8F8;
+            transform: translateY(-110%);
+            transition: all .4s;
+        }
+        input:checked~.nav{
+            transform:translateY(0%);
+
+        }
+        input:checked::before{
+            content:'\f00d';
+        }
+}
+@media(max-width:700px){
+    .nav ol{
+        flex-direction: column;
+        text-align:center;
+    }
+}
+     body{
+         background-color: rgb(226, 170, 29);
+     }
+     .container{
+        position:relative;
+        text-align:center;
+        color:white;
+             
+         }
+         .top-left{
+             position: absolute;
+             top:60px;
+             left:190px;
+             font-size: 45px;
+             text-shadow: 2px 3px navy;
+             color:white;
+         
+         }
+         #n{
+             border:solid white;
+             border-width: 15px 45px 15px 45px;
+         }
+         #a{
+             background-color: crimson;
+             border:solid forestgreen;
+             border-radius: 50px;
+             border-width: 5px;
+             text-align: center;
+             text-shadow: 1px 1px white;
+             font-size: 40px;
+         }
+         #b{
+             text-shadow: 1px 1px white;
+         }
+         #more{
+             border:solid white;
+             border-radius: 40px;
+         }
+    </style>
+    </head>
+    <body>
+        <header>
+            <p class="Logo">Navbar</p>
+            <input type="checkbox" name=" " class="btn">
+            <div class="nav">
+                <ol>
+                    <li><a href="file:///C:/Users/HP/Desktop/mini%20project/home.html">Home</a></li>
+                    <li><a href="file:///C:/Users/HP/Desktop/mini%20project/regions.html">Regions</a></li>
+                    <li><a href="file:///C:/Users/HP/Desktop/mini%20project/travel.html">Travel Information</a></li>
+                    <li><a href="file:///C:/Users/HP/Desktop/mini%20project/language.html">Language</a></li>
+                    <li><a href="file:///C:/Users/HP/Desktop/mini%20project/visa.html">Visas and Currencies</a></li>
+                </ol>
+            </div>
+        </header>
+        <br>
+        <div class="container">
+            <img id="n" src="./read more 2_files/beach2.jpg" alt="beach2" style="width:85%;">
+            <div class="top-left"><u>SUN AND BEACH</u></div>
+        </div>
+        <br>
+        <br>
+        <marquee behaviour="scroll" direction="up"><h1 id="a"><i>Learn a little more about Sun &amp; Beach tourism in Brazil.</i></h1></marquee>
+        <br>
+        <br>
+        <h2 id="b"><i><u>Brazil is blessed with a coastline that stretches for more than 7,000 kilometers, and that translates into beautiful beaches all over the country. In each of them, you will be able to experience the sun, energy, beauty, and joy of Brazilians. If your dream trip involves sunshine, beaches, and having your feet in the sand, Brazil has countless options for you.</u></i></h2>
+        <br>
+        <br>
+        <marquee behaviour="scroll" direction="up"><h1 id="a"><i>Hey! please look on these beaches...</i></h1></marquee>
+        <br>
+        <br>
+        <img id="more" src="./read more 2_files/beach3.jpg" width="493px" height="450px">
+    <img id="more" src="./read more 2_files/coc.jpg" width="493px" height="450px">
+    <img id="more" src="./read more 2_files/beach5.jpg" width="503px" height="450px"> 
+    <img id="more" src="./read more 2_files/beach6.jpg" width="503px" height="450px">
+    <img id="more" src="./read more 2_files/beach7.jpg" width="503px" height="450px">
+    <img id="more" src="./read more 2_files/beach1.jpg" width="503px" height="450px">
+    
+    
+</body></html>
